@@ -40,7 +40,7 @@ test('should add expense to database and store', (done) => {
     note: 'This one is better',
     createdAt: 1000
   };
-
+  
   store.dispatch(startAddExpense(expenseData)).then(() => {
     expect(1).toBe(1);
     done();
